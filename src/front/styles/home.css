@@ -4,4 +4,78 @@
     All pages share the styles on index.css but you should create 
     one more css for each page that will contain the selected used 
     on that page only (the ones not reused in other pages).
-*/
+*//* FORMULARIO DE AUTENTICACIÓN */
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    min-height: 100vh;
+    background-color: #ffffff;
+    animation: fadeIn 0.8s ease-out;
+}
+
+.auth-form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(50, 50, 50, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.auth-form h2 {
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px #aaa;
+}
+
+.auth-form input[type="email"],
+.auth-form input[type="password"] {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.auth-form input[type="email"]:focus,
+.auth-form input[type="password"]:focus {
+    border-color: #000000;
+}
+
+.auth-form button.btn-primary {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.auth-toggle {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.95rem;
+}
+
+.auth-toggle .btn-link {
+    color: #000;
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 0;
+}
+
+.auth-toggle .btn-link:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+.auth-link {
+    text-align: center;
+    margin-top: 20px;
+}
